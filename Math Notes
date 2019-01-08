@@ -1,0 +1,214 @@
+Sigma which mean summation is distributed linearly over equation  Z=X*Y      
+so      Sigma Z =  ( Sigma X )*( Sigma Y )  and you can put sigma with a condition and  distribute it normally
+------------------------------------------------------------------------------------------------------------------------------------------
+if the angle exceeds 90 degree the cosine of angle turns to -ve value 
+if the angle exceeds 180 degree the sine of angle turns to -ve value 
+-------------------------------------------------------------------------------------------------------------------------------------------
+Note if you want to do combination from a given set of N elements the combination set starting from 1 element up to N elements will be as 
+if you are doing bitmasking from 1 to (1<<N)  in time 2^N
+------------------------------------------------------------------------------------------------------------------------------------------
+The symmetric of a number is if i have an array of n elements and i have a value V then its symetric value is n-V    
+Properties of the symmetric 
+1- any number plus its symetric equals to n 
+------------------------------------------------------------------------------------------------------------------------------------------
+zero power zero is math error
+-----------------------------------------------------------------------------------------------------------------------------------------
+First degree equation is the strightline equation
+-----------------------------------------------------------------------------------------------------------------------------------------
+There is a theorm states that for any even number greater than 2 can be expressed as sum of two primes .
+------------------------------------------------------------------------------------------------------------------------------------------
+the distance or the difference between any number and the first prime after it or the last prime before it is very small
+------------------------------------------------------------------------------------------------------------------------------------------
+Note if you have the decimal of this binary 00101 and i want to update decimal for this binary 00111 so just make 00010 and add it to 
+the decimal of the 00101 binary 
+----------------------------------------------------------------------------------------------------------------------------------------
+If i want b-a  is equal to a-(b+1)+1
+----------------------------------------------------------------------------------------------------------------------------------------
+To maximize the product of a set of numbers increase the smaller first and if you want to decrease the product decrease the smaller 
+number first
+-----------------------------------------------------------------------------------------------------------------------------------------
+How to Know if the following 3 sides can form a triangle so there is the answer   check if the smaller two sides if their sum is greater 
+than the largest side so it can form a triangle else NO
+----------------------------------------------------------------------------------------------------------------------------------------
+Any circle with 3 sides forming a triangle inside it , it must be a right angled triangle 
+----------------------------------------------------------------------------------------------------------------------------------------
+By linearity of expectation you can think of the equation of the result without expectation then distribute the expectation
+----------------------------------------------------------------------------------------------------------------------------------------
+Way to calculate the probability is to know the  ( the number of choices that lead to the answer / the total number of choices )
+----------------------------------------------------------------------------------------------------------------------------------------
+If you are comparing between two numbers and you want to reduce the power so multiply both sides to log
+----------------------------------------------------------------------------------------------------------------------------------------
+If i have two numbers x and y and i am wondering x^y or y^x gives larger value there is nothing can tell, i will need to calculate both
+values and know
+----------------------------------------------------------------------------------------------------------------------------------------
+About probability if you have a set contining diifferent families and you want the probability of choosing a pair of persons one from
+familiy A and the other from familiy B 
+Wrong answer is to consider that i will choose one from A then one from B OR  i will choose one from B then one from A bec i don't said
+that 
+The true answer is probability of having 2 persons from those two families are   
+(number of pairs of two families) / (total number of pairs)  =  ( number of members of A * number of members of B ) / (  total number 
+of pairs )
+----------------------------------------------------------------------------------------------------------------------------------------
+Geometric series : sigma from i=0 to inf   r^i  = 1/(1-r)
+---------------------------------------------------------------------------------------------------------------------------------------
+if    X / Y   and Y>X   if you add the amount M to X and to Y the result will be larger   ( X+M ) / (Y+M)
+proof
+X / Y  -   ( X+M ) / (Y+M)  =( Y(X+M) - X(Y+M) ) / ( Y(Y+M) )  = (MY-XM) / (Y^2+YM)       
+so if Y>X  it will increase but else it will decrease
+----------------------------------------------------------------------------------------------------------------------------------------
+If you want to know the bigger value just subtract and see whether the difference is +ve or -ve
+----------------------------------------------------------------------------------------------------------------------------------------
+To know whether a four points make a square not nessasary parallel to co-ordinates or not check that   
+1- the four sides are equal
+2- get the distances of the two diagonals and check that they are equal and equal to that distance by bythagorth 
+( to make sure that it has 90 degree angle )
+----------------------------------------------------------------------------------------------------------------------------------------
+When you hit a ball to the floor there is a normal which is at the middle of the floor a line makes 90 degree with both 
+sides of the floor the angle of incidence with the normal equals to the angle of reflection with the normal
+link --------->   http://scienceworld.wolfram.com/physics/AngleofReflection.html
+----------------------------------------------------------------------------------------------------------------------------------------
+nPr   P is permuation the n is the amount of numbers and r is the size of the set
+----------------------------------------------------------------------------------------------------------------------------------------
+Math Note if i have a Average= (x+y)/2 to add another value z so minmize the Average it must be less than the (x+y)/2 ( previous average)
+(x+y+z)/3.
+
+proof 
+-----
+(x+y+((x+y)/2))/3 = x/3+y/3+x/6+y/6 = x/2+y/2 so if z is less than (x+y)/2 so it will be less than x/2+y/2
+----------------------------------------------------------------------------------------------------------------------------------------
+The Labeled Tree is a tree where every node in it have a path to a certer node let it be node one for example in different ways the 
+number of the ways is n^(n-2).
+link  http://mathworld.wolfram.com/LabeledTree.html
+----------------------------------------------------------------------------------------------------------------------------------------
+Little Fermand theorem
+if n is prime then a^n % n = a % n
+----------------------------------------------------------------------------------------------------------------------------------------
+i=N
+Sigma i^2  = (N*(N+1)*(2*N+1))/6
+i=0
+----------------------------------------------------------------------------------------------------------------------------------------
+The square root function decreases in a big rate 
+eg if i have x and sqrt(x) then sqrt( sqrt(x) ) and so on it decreases from 10^18 to 1 in few steps and when it reaches one it turns to 
+be contant.
+----------------------------------------------------------------------------------------------------------------------------------------
+1-If X is unknown and i know X%Ci for some integers Ci for every 0<i<n then i can know  X % lcm(all Ci).
+2- Some mod properties
+  -a1=a2 (mod n) and b1=b2 (mod n), a1+b1=a2+b2 (mod n) and a1*b1 = a2*b2 (mod n) ans (a1-a2) is divisable by n
+3- Some Lcm and gcd properties
+  -gcd( P.N,P.M ) = P*gcd( N,M )  & lcm( P.N,P.M ) = P*lcm( N,M ).
+  
+  - If gcd( N,M ) = 1, then
+  gcd( N*M , Q) = gcd( N,Q ) * gcd( M,Q )
+  lcm( N*M,Q ) =( lcm(N,Q) * lcm(M,Q) ) / Q
+  
+  -gcd(gcd(N, M), P) = gcd(N, gcd(M, P))
+   lcm(lcm(N, M), P) = lcm(N, lcm(M, P)).
+  
+ -gcd(M, N, P) = gcd(gcd(M, N),P) = gcd(M, gcd(N, P))
+  lcm(M, N, P) = lcm(lcm(M, N),P) = lcm(M, lcm(N, P)).
+  
+  For integers N1, ..., Nk, k ≥ 2,
+lcm(gcd(N1, M), gcd(N2, M), ..., gcd(Nk, M)) = gcd(lcm(N1, ..., Nk), M)
+gcd(lcm(N1, M), lcm(N2, M), ..., lcm(Nk, M)) = lcm(gcd(N1, ..., Nk), M).
+
+Lcm is the union of the prime factors and gcd is the intersection of the prime factors.
+----------------------------------------------------------------------------------------------------------------------------------------
+Permutations and Combinations  n is the numbers and r is the parts want to fill
+
+permutations with replacement(repition)
+n^r
+permutations without replacement 
+nPr
+combinations with replacement 
+( n-1+r )! / ( r! * (n-1)! )
+combination without replacemant 
+nCr = n!/((n-r)!*r!)
+----------------------------------------------------------------------------------------------------------------------------------------
+Note if you have some numbers from 1 to n and you want to put a number in every of three packets but in sorted order so
+the number of ways to to do so is------> combinations with replacement ( n-1+r )! / ( r! * (n-1)! ).
+----------------------------------------------------------------------------------------------------------------------------------------
+Sigma i=0 to i=K   i * (n choose i ) = K * 2^(K-1)
+----------------------------------------------------------------------------------------------------------------------------------------
+Any triangle with integer vertexes it is doubled area is integer.
+----------------------------------------------------------------------------------------------------------------------------------------
+If A * B = C * D  this doesn't mean that A is equal to C or D and B is equal to C or D, this means that A*B and C*D have the same
+prime factors but not the same numbers.
+----------------------------------------------------------------------------------------------------------------------------------------
+If you are dealing with equations and you want to write (num)/2 and num is not even and we want to get the ceiled value so 
+its written way is (num+1)/2.
+----------------------------------------------------------------------------------------------------------------------------------------
+iff A>B then A%B <= (A+1)/2 .
+----------------------------------------------------------------------------------------------------------------------------------------
+If a number let it be T decreases by T%=B every time and T>B so if T is 10^18 it will be zero in log(n) complexity
+----------------------------------------------------------------------------------------------------------------------------------------
+Force Value Technique
+If i have a equation where the variable is x , ax-diff=b and i want to get the value of x that makes the diff min possible so force (let 
+the value of diff equal to zero ) the value of diff to be min possible which is zero then get the x if it supposed to be integer and it 
+is float then there is no integer value for x to make diff equals to zero to to be min diff yu may ceil the value of x .
+----------------------------------------------------------------------------------------------------------------------------------------
+-a/b + b/a will be minminum when a=b and as much as the difference increase the value will increase.
+- a/b and c/d if the difference between them equal that doesn't mean their actual values are equal.
+----------------------------------------------------------------------------------------------------------------------------------------
+Factorization equation
+(-b +/- sqrt( b^2-4ac ) )/ (2a) 
+eg ax^2+bx+c=0  note take the c with its sign.
+----------------------------------------------------------------------------------------------------------------------------------------
+If i have a circle let it be circle1 it is center (x1,y1) and radius r1 and i want to get the center of the circle that contain circle1 
+let it be circle2 it is center (x2,y2) and radius r2 there is a range of points where the center of circle2 can exist given that the 
+center of circle2 is on the x-axis so the leftside of the range is x2-delta and the rightside is x2+delta on x-axis where delta is 
+ double delta= sqrt(((r2-r1)*(r2-r1))-(y2*y2)); 
+----------------------------------------------------------------------------------------------------------------------------------------
+if I sum up the diff between ranges for eg range(x,y) sum+= (y-x) so i am taking from x to y-1 ---> x-(y-1)+1.
+so if i update a range with value take care i am calculating all the range y-x+1 or the diff between it y-x.
+----------------------------------------------------------------------------------------------------------------------------------------
+If you have a Regular Polygon (all sides & angles equal and you want to take a regular polygon from it so the number of sides of the 
+new polygon must be factor of the number of points of the orginal polygon.
+----------------------------------------------------------------------------------------------------------------------------------------
+If i have an array of integers of size up to 10^5 the number of distinct elements that their number of occurance in the 
+array equals to their value  is at most 500 bec (n*(n+1))/2 <= 10^5.
+----------------------------------------------------------------------------------------------------------------------------------------
+Sum of arithematic progression sequence ( sequence where the difference between values equal eg 2,4,6 diffrence=2 )
+sum= ((a1+an)*n)/2 where a1 is the value of the first element and an is the value of the last element and n is the total number of
+elements, Takecare don't write (a1+an)/2 * n bec (a1+an)/2 may be double.
+----------------------------------------------------------------------------------------------------------------------------------------
+If i have an opertaion which is i pick m indexes of an array and decrease their value by one of the m indexes must be different i can do
+that t times to turn all array values to zero okay i can say m*t is the number of decreases i can make so if the sum of all the elements
+of the array is less than or equal to m*t so its possible to turn values to zero else its impossible but here there is one thing i am 
+a fraid that may some element be decreased more than t times by choosing not distinct indexes at some of t times so i have to check first
+whether the max of the array is less or equal to t if so it works you can use the rule else it is impossible.
+----------------------------------------------------------------------------------------------------------------------------------------
+If a ^ b = c and i have only a and c so b = a ^ c
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
